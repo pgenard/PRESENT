@@ -1,5 +1,19 @@
 # PRESENT 128-bits
 
+## Verilator Testbench
+
+```bash
+make clean
+```
+
+```bash
+make build
+```
+
+```bash
+make waves
+```
+
 ## Test Vectors
 | K                                      | P                    | C                    |
 | :----------------:                     | :------:             | :-----:              |
