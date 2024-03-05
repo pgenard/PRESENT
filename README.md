@@ -1,4 +1,8 @@
-# PRESENT 128-bits
+﻿# PRESENT 128-bits
+
+## About
+
+This **Avalon** Crypto-Accelerator is based on a **DMA** IP and implements **PRESENT** (by Orange Labs).
 
 ## Verilator Testbench
 
@@ -10,17 +14,19 @@ make clean
 make build
 ```
 
+### Waveforms
+
 ```bash
 make waves
 ```
 
 ## Test Vectors
-| K                                      | P                    | C                    |
-| :----------------:                     | :------:             | :-----:              |
-| 𝟶𝚡𝟶𝟶𝟶𝟶𝟶𝟶𝟶𝟶𝟶𝟶𝟶𝟶𝟶𝟶𝟶𝟶𝟶𝟶𝟶𝟶𝟶𝟶𝟶𝟶𝟶𝟶𝟶𝟶𝟶𝟶𝟶𝟶 | 𝟶𝚡𝟶𝟶𝟶𝟶𝟶𝟶𝟶𝟶𝟶𝟶𝟶𝟶𝟶𝟶𝟶𝟶 | 𝟶𝚡𝟿𝟼𝚍𝚋𝟽𝟶𝟸𝚊𝟸𝚎𝟼𝟿𝟶𝟶𝚊𝚏 |
-| 𝟶𝚡𝚏𝚏𝚏𝚏𝚏𝚏𝚏𝚏𝚏𝚏𝚏𝚏𝚏𝚏𝚏𝚏𝚏𝚏𝚏𝚏𝚏𝚏𝚏𝚏𝚏𝚏𝚏𝚏𝚏𝚏𝚏𝚏 | 𝟶𝚡𝟶𝟶𝟶𝟶𝟶𝟶𝟶𝟶𝟶𝟶𝟶𝟶𝟶𝟶𝟶𝟶 | 𝟶𝚡𝟷𝟹𝟸𝟹𝟾𝚌𝟽𝟷𝟶𝟸𝟽𝟸𝚊𝟻𝚍𝟾 |
-| 𝟶𝚡𝟶𝟶𝟶𝟶𝟶𝟶𝟶𝟶𝟶𝟶𝟶𝟶𝟶𝟶𝟶𝟶𝟶𝟶𝟶𝟶𝟶𝟶𝟶𝟶𝟶𝟶𝟶𝟶𝟶𝟶𝟶𝟶 | 𝟶𝚡𝚏𝚏𝚏𝚏𝚏𝚏𝚏𝚏𝚏𝚏𝚏𝚏𝚏𝚏𝚏𝚏 | 𝟶𝚡𝟹𝚌𝟼𝟶𝟷𝟿𝚎𝟻𝚎𝟻𝚎𝚍𝚍𝟻𝟼𝟹 |
-| 𝟶𝚡𝚏𝚏𝚏𝚏𝚏𝚏𝚏𝚏𝚏𝚏𝚏𝚏𝚏𝚏𝚏𝚏𝚏𝚏𝚏𝚏𝚏𝚏𝚏𝚏𝚏𝚏𝚏𝚏𝚏𝚏𝚏𝚏 | 𝟶𝚡𝚏𝚏𝚏𝚏𝚏𝚏𝚏𝚏𝚏𝚏𝚏𝚏𝚏𝚏𝚏𝚏 | 𝟶𝚡𝟼𝟸𝟾𝚍𝟿𝚏𝚋𝚍𝟺𝟸𝟷𝟾𝚎𝟻𝚋𝟺 |
+| K                                  | P                  | C                  |
+| :----------------:                 | :------:           | :-----:            |
+| 0x00000000000000000000000000000000 | 0x0000000000000000 | 0x96db702a2e6900af |
+| 0xffffffffffffffffffffffffffffffff | 0x0000000000000000 | 0x13238c710272a5d8 |
+| 0x00000000000000000000000000000000 | 0xffffffffffffffff | 0x3c6019e5e5edd563 |
+| 0xffffffffffffffffffffffffffffffff | 0xffffffffffffffff | 0x628d9fbd4218e5b4 |
 
 ## Author
-Pierre GENARD
+**Pierre GENARD**
